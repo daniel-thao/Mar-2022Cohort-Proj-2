@@ -97,3 +97,30 @@ dbSync();
 app.listen(PORT, async () => {
   console.log("App listening on PORT " + PORT);
 });
+
+
+/*
+    FRONTEND
+      - Click the slashes
+        - generates the purple that we see when at this URL localhost/1 (which is puzzle 1)
+
+      - Be able to click the numbers inside the purple box
+        - Once clicked, it hides away or deletes the purple box
+        - Populates the specific slashed-box that we first clicked on
+
+      - We also want to wire to the correct Route so that the Database also gets populated with the correct Data
+        - Remember we had Puzzle-Progress table, so we want to update puzzle progress dataline related to the user
+
+
+
+    BACKEND
+      - create the route to the database
+
+      - go into the correct table to change data
+        - change the necessary data
+        - make sure that the format stays the same
+
+      - rerender a new landing page.handlebars with the new number that was selected by the user and inserted into the DB
+
+*/
+console.log("get rid of me")
