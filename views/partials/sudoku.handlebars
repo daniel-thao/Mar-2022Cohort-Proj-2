@@ -1,0 +1,152 @@
+<div class="flex-col">
+  {{#each sudoku}}
+    <div class="flex gap-2 my-2 justify-center border-black">
+      {{#each rowOne}}
+        <div class="grid grid-rows-3 grid-flow-col gap-4 border-black">
+          {{#each squareOne}}
+            <div
+              class="bg-red-200 p-2 w-12 text-2xl justify-self-center border-2 border-black flex justify-center cursor-pointer"
+              data-sudoku="block"
+            >
+              <p class="" data-sudoku="block">{{val}}</p>
+            </div>
+          {{/each}}
+        </div>
+        <div class="grid grid-rows-3 grid-flow-col gap-4">
+          {{#each squareTwo}}
+            <div
+              class="bg-red-200 p-2 w-12 text-2xl justify-self-center border-2 border-black flex justify-center cursor-pointer"
+              data-sudoku="block"
+            >
+              <p class="" data-sudoku="block">{{val}}</p>
+            </div>
+          {{/each}}
+        </div>
+        <div class="grid grid-rows-3 grid-flow-col gap-4">
+          {{#each squareThree}}
+            <div
+              class="bg-red-200 p-2 w-12 text-2xl justify-self-center border-2 border-black flex justify-center cursor-pointer"
+              data-sudoku="block"
+            >
+              <p class="" data-sudoku="block">{{val}}</p>
+            </div>
+          {{/each}}
+        </div>
+      {{/each}}
+    </div>
+
+    <div class="flex gap-2 my-2 justify-center">
+      {{#each rowTwo}}
+        <div class="grid grid-rows-3 grid-flow-col gap-4">
+          {{#each squareOne}}
+            <div
+              class="bg-red-200 p-2 w-12 text-2xl justify-self-center border-2 border-black flex justify-center cursor-pointer"
+              data-sudoku="block"
+            >
+              <p class="" data-sudoku="block">{{val}}</p>
+            </div>
+          {{/each}}
+        </div>
+        <div class="grid grid-rows-3 grid-flow-col gap-4">
+          {{#each squareTwo}}
+            <div
+              class="bg-red-200 p-2 w-12 text-2xl justify-self-center border-2 border-black flex justify-center cursor-pointer"
+              data-sudoku="block"
+            >
+              <p class="" data-sudoku="block">{{val}}</p>
+            </div>
+          {{/each}}
+        </div>
+        <div class="grid grid-rows-3 grid-flow-col gap-4">
+          {{#each squareThree}}
+            <div
+              class="bg-red-200 p-2 w-12 text-2xl justify-self-center border-2 border-black flex justify-center cursor-pointer"
+              data-sudoku="block"
+            >
+              <p class="" data-sudoku="block">{{val}}</p>
+            </div>
+          {{/each}}
+        </div>
+      {{/each}}
+    </div>
+
+    <div class="flex gap-2 my-2 justify-center">
+      {{#each rowThree}}
+        <div class="grid grid-rows-3 grid-flow-col gap-4">
+          {{#each squareOne}}
+            <div
+              class="bg-red-200 p-2 w-12 text-2xl justify-self-center border-2 border-black flex justify-center cursor-pointer"
+              data-sudoku="block"
+            >
+              <p class="" data-sudoku="block">{{val}}</p>
+            </div>
+          {{/each}}
+        </div>
+        <div class="grid grid-rows-3 grid-flow-col gap-4">
+          {{#each squareTwo}}
+            <div
+              class="bg-red-200 p-2 w-12 text-2xl justify-self-center border-2 border-black flex justify-center cursor-pointer"
+              data-sudoku="block"
+            >
+              <p class="" data-sudoku="block">{{val}}</p>
+            </div>
+          {{/each}}
+        </div>
+        <div class="grid grid-rows-3 grid-flow-col gap-4">
+          {{#each squareThree}}
+            <div
+              class="bg-red-200 p-2 w-12 text-2xl justify-self-center border-2 border-black flex justify-center cursor-pointer"
+              data-sudoku="block"
+            >
+              <p class="" data-sudoku="block">{{val}}</p>
+            </div>
+          {{/each}}
+        </div>
+      {{/each}}
+    </div>
+  {{/each}}
+</div>
+
+<div
+  class="grid grid-rows-3 grid-flow-col gap-4 w-60 flex justify-center bg-purple-400 absolute top-1/4 left-0"
+  data-chooser="chooser"
+>
+  <div
+    class="p-4 w-16 bg-red-400 flex justify-center text-2xl border-2 border-black rounded-xl"
+    data-choice="color"
+  >1</div>
+  <div
+    class="p-4 w-16 bg-red-400 flex justify-center text-2xl border-2 border-black rounded-xl"
+    data-choice="color"
+  >2</div>
+  <div
+    class="p-4 w-16 bg-red-400 flex justify-center text-2xl border-2 border-black rounded-xl"
+    data-choice="color"
+  >3</div>
+  <div
+    class="p-4 w-16 bg-red-400 flex justify-center text-2xl border-2 border-black rounded-xl"
+    data-choice="color"
+  >4</div>
+  <div
+    class="p-4 w-16 bg-red-400 flex justify-center text-2xl border-2 border-black rounded-xl"
+    data-choice="color"
+  >5</div>
+  <div
+    class="p-4 w-16 bg-red-400 flex justify-center text-2xl border-2 border-black rounded-xl"
+    data-choice="color"
+  >6</div>
+  <div
+    class="p-4 w-16 bg-red-400 flex justify-center text-2xl border-2 border-black rounded-xl"
+    data-choice="color"
+  >7</div>
+  <div
+    class="p-4 w-16 bg-red-400 flex justify-center text-2xl border-2 border-black rounded-xl"
+    data-choice="color"
+  >8</div>
+  <div
+    class="p-4 w-16 bg-red-400 flex justify-center text-2xl border-2 border-black rounded-xl"
+    data-choice="color"
+  >9</div>
+</div>
+
+<script src="/javascript/sudoku.js"></script>

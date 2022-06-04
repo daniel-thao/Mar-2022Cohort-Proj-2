@@ -1,0 +1,14 @@
+<div class="relative">
+    {{#if user}}
+        {{user}}
+
+        {{#if sudoku}}
+            {{> sudoku puzzle=sudoku}}
+        {{/if}}
+    {{!-- This is actually confusing in terms of color coding tbh, but the second part is the parameter --}}
+    {{!-- There is no way to render portions of a parent template, in this case --> landing.handlebars --}}
+        {{> homepage user=user allPuzzles=allPuzzles}}
+    {{else}}
+        {{> auth errorData=errorData}}
+    {{/if}}
+</div>

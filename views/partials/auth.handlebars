@@ -1,0 +1,61 @@
+<div class="flex justify-evenly w-full">
+  {{#if errorData.createAcc}}
+  {{errorData.createAcc}}
+  {{/if}}
+
+  {{#if errorData.login}}
+  {{errorData.login}}
+  {{/if}}
+</div>
+
+<div class="flex justify-evenly h-full">
+  <div class="bg-red-400 px-10 py-4 self-center rounded-3xl space-y-4">
+    <h1 class="text-4xl">Create Account</h1>
+    <form id="createAccForm" class="space-y-4 flex-column justify-center">
+      <div>
+        <label class="text-xl" for="uName">User Name</label></br>
+        <input class="text-lg p-2 rounded-lg border-2 border-white bg-red-100 w-full " type="text" id="uName"
+          name="uName" />
+      </div>
+      <div>
+        <label class="text-xl" for="email">Email</label></br>
+        <input class="text-lg p-2 rounded-lg border-2 border-white bg-red-100 w-full" type="text" id="email"
+          name="email" />
+      </div>
+      <div>
+        <label class="text-xl" for="pWord">Password</label></br>
+        <input class="text-lg p-2 rounded-lg border-2 border-white bg-red-100 w-full" type="text" id="pWord"
+          name="pWord" />
+      </div>
+      <input
+        class="p-4 bg-white w-full rounded-lg cursor-pointer hover:bg-emerald-200 transition-all duration-500 ease-in-out"
+        type="submit" id="createAcc" name="createAcc" value="Create Account" />
+    </form>
+
+  </div>
+
+  <div class="bg-purple-400 px-10 py-4 self-center rounded-3xl space-y-4">
+    <h1 class="text-4xl">Login</h1>
+    <form id="loginForm" class="space-y-4 flex-column justify-center">
+      <div>
+        <label class="text-xl" for="email">Email</label><br />
+        <input class="text-lg p-2 rounded-lg border-2 border-white bg-purple-100 w-full " type="text" id="email"
+          name="email" /><br />
+      </div>
+
+      <div>
+        <label class="text-xl" for="pWord">password</label><br />
+        <input class="text-lg p-2 rounded-lg border-2 border-white bg-purple-100 w-full " type="text" id="pWord"
+          name="pWord" /><br />
+      </div>
+      <input
+        class="p-4 bg-white w-full rounded-lg cursor-pointer hover:bg-emerald-200 transition-all duration-500 ease-in-out"
+        type="submit" id="loginAcc" name="loginAcc" value="Login" />
+    </form>
+
+  </div>
+
+
+</div>
+
+<script src="/javascript/landingAuth.js"></script>

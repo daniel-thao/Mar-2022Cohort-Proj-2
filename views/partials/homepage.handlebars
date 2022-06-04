@@ -1,0 +1,10 @@
+<div class="flex flex-wrap justify-between space-x-10 mx-10 my-20">
+  {{#each allPuzzles}}
+    <div class="bg-gradient-to-r from-cyan-500 to-blue-500 flex-grow h-60" data-puzzle="puzzle" data-id={{id}}>
+      <h1 class="text-xl" data-puzzle="puzzle" data-id={{id}}>Puzzle {{id}}</h1>
+      <h1 class="text-xl" data-puzzle="puzzle" data-id={{id}}>{{difficulty}}</h1>
+    </div>
+  {{/each}}
+</div>
+
+<script src="/javascript/homepage.js"></script>
